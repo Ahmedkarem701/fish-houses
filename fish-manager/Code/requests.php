@@ -250,7 +250,6 @@ $requests = $sql->fetchAll();
                                             <td><?php echo $request['r_order'];?></td>
                                             <td><?php echo $request['co_name'];?></td>
                                             <td>
-                                                <?php if ($request['status'] == 0) echo '<button class="btn btn-success mb-3" onclick="window.location.href=\'backend/update.php?do=requests&id=' . $request['r_id'] . '\'">Done</button>'; else echo '';?>
                                                 <button class="btn btn-danger mb-3" onclick="window.location.href='backend/delete.php?do=requests&id=<?php echo $request['r_id'];?>'">Delete</button>
                                             </td>
                                         </tr>
